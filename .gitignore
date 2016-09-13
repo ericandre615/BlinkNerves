@@ -1,0 +1,19 @@
+# App artifacts
+/_build
+/db
+/deps
+/*.ez
+
+# Nerves images
+/_images
+
+# Generate on crash by the VM
+erl_crash.dump
+
+# System
+*.swp
+*.swo
+.DS_Store
+
+node_modules
+node_modules/**/node_modules
