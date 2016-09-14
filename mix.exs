@@ -21,11 +21,12 @@ defmodule BlinkingNerves.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {BlinkingNerves, []},
-     applications: [:logger]]
+     applications: [:logger, :nerves_leds]]
   end
 
   def deps do
-    [{:nerves, "~> 0.3.0"}]
+    [{:nerves, "~> 0.3.0"},
+      {:nerves_leds, "~> 0.7.0"}]
   end
 
   def system(target) do
